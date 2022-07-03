@@ -6,7 +6,8 @@ function App() {
 
   const [userName, setUserName] = useState('');
 
-  const proxy = "http://localhost:5000"
+  // const proxy = "http://localhost:5000"
+  const proxy = "http://139.59.83.154:5000"
 
   const getNames = async () => {
     const response = await axios.get(`${proxy}/name`);
